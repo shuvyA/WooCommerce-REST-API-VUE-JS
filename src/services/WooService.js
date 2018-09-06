@@ -12,7 +12,14 @@ const WooCommerce = new WooCommerceAPI({
 
 
 function products() {
+    orders();
     return WooCommerce.getAsync('products').then((result) => {
+        return JSON.parse(result.toJSON().body);
+    });
+}
+function orders() {
+    return WooCommerce.getAsync('orders').then((result) => {
+        console.log('order',JSON.parse(result.toJSON().body) );
         return JSON.parse(result.toJSON().body);
     });
 }
