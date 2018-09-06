@@ -14,6 +14,8 @@ const WooCommerce = new WooCommerceAPI({
 function products() {
     orders();
     return WooCommerce.getAsync('products').then((result) => {
+        console.log('products',JSON.parse(result.toJSON().body) );
+
         return JSON.parse(result.toJSON().body);
     });
 }

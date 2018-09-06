@@ -2,9 +2,8 @@
   <div class="orders">
     <main-header/>
     <div class="container"  v-if="orders">
-    <h1> API Woo</h1>
-      <!-- <product-list :orders="orders"/> -->
-      {{orders}}
+    <h1> order</h1>
+      <orders-list :orders="orders"/>
     </div>
     <div v-else>Loading</div>
   </div>
@@ -14,7 +13,7 @@
 <script>
 import WooService from "@/services/WooService.js";
 import MainHeader from "@/components/MainHeader.vue";
-import ProductList from "@/components/ProductList.vue";
+import OrdersList from "@/components/OrdersList.vue";
 
 export default {
   name: "orders",
@@ -23,18 +22,18 @@ export default {
       orders: null
     };
   },
-  created(){
-    this.loadOrders()
+  created() {
+    this.loadOrders();
   },
-  methods:{
-        loadOrders() {
-            return WooService.orders().then(res => (this.orders = res))
-        },
-
+  methods: {
+    loadOrders() {
+      return WooService.orders().then(res => (this.orders = res));
+    }
   },
 
   components: {
-    MainHeader, ProductList
+    MainHeader,
+    OrdersList
   }
 };
 </script>

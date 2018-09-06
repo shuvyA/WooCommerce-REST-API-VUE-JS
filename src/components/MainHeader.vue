@@ -9,6 +9,7 @@
 
             <ul ref="navDesktop" class="nav-desktop flex-row align-center flex inline-list" arial-label="Main navigation bar">
                 <li><router-link to="/products"> Products </router-link></li>
+                <li><router-link to="/orders"> Orders </router-link></li>
                 <li><router-link to="/"> Home </router-link></li>
             </ul>
 
