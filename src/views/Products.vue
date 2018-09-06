@@ -1,20 +1,19 @@
 <template>
   <div class="products">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <h1> my store</h1>
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-      <!-- {{sayResult}} -->
-    <div v-if="products">
-      {{products}}
+    <main-header/>
+    <div class="container"  v-if="products">
+    <h1> API Woo</h1>
+      <product-list :products="products"/>
     </div>
+    <div v-else>Loading</div>
   </div>
   
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 import WooService from "@/services/WooService.js";
+import MainHeader from "@/components/MainHeader.vue";
+import ProductList from "@/components/ProductList.vue";
 
 export default {
   name: "home",
@@ -26,24 +25,15 @@ export default {
   created(){
     this.loadProducts()
   },
-
-  computed: {
-    sayResult() {
-      return WooService.products().then(res => (this.products = res));
-    }
-  },
   methods:{
         loadProducts() {
             return WooService.products().then(res => (this.products = res))
-
-            // return UserService.query({ name: userName })
-            //     .then(users => this.user = users[0]);
         },
 
   },
 
   components: {
-    HelloWorld
+    MainHeader, ProductList
   }
 };
 </script>
