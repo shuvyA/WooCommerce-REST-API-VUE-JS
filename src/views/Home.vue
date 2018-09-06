@@ -1,9 +1,7 @@
 <template>
   <div class="home">
     <main-header />
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <h1>Welcome</h1>
-    
+    <img src="../assets/img/cover.jpg">>
   </div>
   
 </template>
