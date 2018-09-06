@@ -5,11 +5,11 @@
 
         <div class="container flex space-between align-center">
 
-            <h1><router-link to="/">SALE</router-link></h1>
+            <h1><router-link to="/">SHOP API</router-link></h1>
 
             <ul ref="navDesktop" class="nav-desktop flex-row align-center flex inline-list" arial-label="Main navigation bar">
-                <li><router-link to="/"> Home </router-link></li>
                 <li><router-link to="/products"> Products </router-link></li>
+                <li><router-link to="/"> Home </router-link></li>
             </ul>
 
             <div ref="navMobile" class="nav-mobile" @click="toggleNavMobile">
@@ -45,6 +45,7 @@ export default {
 <style scoped lang="scss">
 .main-header {
   background-color: #333;
+  padding: 5px;
 
   a {
     color: #fff;
@@ -66,7 +67,7 @@ export default {
     margin: 0px;
 
     li {
-      padding: 0.5em 1em;
+      padding: 1.5em 1em;
       font-weight: bold;
 
       a {
