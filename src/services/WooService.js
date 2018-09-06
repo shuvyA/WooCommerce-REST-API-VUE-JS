@@ -26,5 +26,6 @@ function orders() {
 
 
 export default {
-    products
+    products,
+    orders
 }
