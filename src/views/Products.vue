@@ -16,7 +16,7 @@ import MainHeader from "@/components/MainHeader.vue";
 import ProductList from "@/components/ProductList.vue";
 
 export default {
-  name: "home",
+  name: "products",
   data() {
     return {
       products: null
