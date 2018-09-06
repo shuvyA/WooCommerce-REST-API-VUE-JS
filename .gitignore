@@ -2,7 +2,7 @@
 node_modules
 /dist
 # woo- config
-src/services/ConfigWoo.js
+/src/services/ConfigWoo.js
 
 # local env files
 .env.local
