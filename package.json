@@ -19,9 +19,13 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.1",
-    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.7.0",
     "@vue/cli-plugin-pwa": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
@@ -31,7 +35,8 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "@vue/prettier"
     ],
     "rules": {},
     "parserOptions": {

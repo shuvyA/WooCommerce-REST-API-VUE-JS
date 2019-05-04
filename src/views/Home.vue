@@ -11,15 +11,11 @@
 import MainHeader from "@/components/MainHeader.vue";
 export default {
   name: "home",
- 
 
- 
-
-  components: { MainHeader
+  components: {
+    MainHeader
   }
 };
 </script>
 <style lang="scss" scoped>
-
 </style>
-

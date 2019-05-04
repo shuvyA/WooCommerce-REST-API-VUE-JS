@@ -22,18 +22,18 @@ export default {
       products: null
     };
   },
-  created(){
-    this.loadProducts()
+  created() {
+    this.loadProducts();
   },
-  methods:{
-        loadProducts() {
-            return WooService.products().then(res => (this.products = res))
-        },
-
+  methods: {
+    loadProducts() {
+      return WooService.products().then(res => (this.products = res));
+    }
   },
 
   components: {
-    MainHeader, ProductList
+    MainHeader,
+    ProductList
   }
 };
 </script>

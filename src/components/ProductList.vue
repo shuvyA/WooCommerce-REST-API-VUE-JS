@@ -15,7 +15,7 @@
 import ProductPreview from "@/components/ProductPreview.vue";
 export default {
   name: "ProductList",
-  props: [ "products" ],
+  props: ["products"],
   components: {
     ProductPreview
   }
