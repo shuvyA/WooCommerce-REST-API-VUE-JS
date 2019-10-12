@@ -3,7 +3,7 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import Orders from "./views/Orders.vue";
 import Products from "./views/Products.vue";
-import Tasks form "./views/Tasks.vue"
+import Tasks from "./views/Tasks.vue";
 
 Vue.use(Router);
 

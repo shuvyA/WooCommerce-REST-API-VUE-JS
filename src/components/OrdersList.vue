@@ -2,9 +2,12 @@
    <div class= "order-list" >
     <h2>list</h2>
 <ul class="clean-list flex space-around align-center flex-wrap">
-    <li v-if="orders" v-for="order in orders" :key="order.id">
+  <span v-if="orders">
+
+    <li  v-for="order in orders" :key="order.id">
     <order-preview :order="order"/>
     </li>
+  </span>
 </ul>
 
 <div class="container-list">
