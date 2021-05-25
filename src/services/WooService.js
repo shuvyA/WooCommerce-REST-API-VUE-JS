@@ -3,7 +3,7 @@ var WooCommerceAPI = require("woocommerce-api");
 import ConfigWoo from "./ConfigWoo.js";
 
 const WooCommerce = new WooCommerceAPI({
-  url: "https://shuvy.com/wooshop",
+  url: "example url",
   consumerKey: ConfigWoo.consumerKey,
   consumerSecret: ConfigWoo.consumerSecret,
   wpAPI: true,
